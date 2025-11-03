@@ -29,7 +29,7 @@ useEffect(() => {
     <div>
 
  
-      <div dir='rtl' className="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-8 mx-auto p-2 lg:p-6 pb-8   text-[13px] text-justify">
+      <div dir='rtl' className="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-8 mx-auto p-3 lg:p-6 pb-8   text-[13px] text-justify">
          <div className="flex flex-col-reverse lg:flex-col lg:contents gap-6">
                 <Image  style={{
             filter: 'brightness(0.85) contrast(1.1) sepia(0.15)  ', // Added filters
@@ -37,10 +37,10 @@ useEffect(() => {
 
 
               <section className=" text-sm  ">
-              <div className='rounded-xl shadow p-6 space-y-4 border border-dashed h-fit  mb-5    border-gray-300 bg-white/30 opacity-77 backdrop-blur-sm>'>
+              <div className='rounded-xl shadow p-6 space-y-4 border border-dashed h-fit  mb-6    border-gray-300 bg-white/30 opacity-77 backdrop-blur-sm>'>
 
             
-          <h1 className="  font-bold  text-[#7E1215]  text-[13px] pb-1 ">الملاك ميخائيل شفيع كنيستنا</h1>
+          <h1 className="  font-bold  text-[#7E1215]  text-[13px] pb-1 underline">الملاك ميخائيل شفيع كنيستنا</h1>
           <p className="text-[13px] pb-1   ">
             الملاك ميخائيل هو رئيس الملائكة . قوي وشجاع، ويدافع عن أولاد الله.
             في يوم من الأيام، حاول الشيطان أن يتمرد على الله، لكن الملاك ميخائيل وقف وقال:
@@ -56,7 +56,7 @@ useEffect(() => {
         <p   className=" text-[13px] pb-1  ">
             يُصوّر الملاك ميخائيل غالبًا وهو يحمل سيفًا أو رمحًا، يرتدي درعًا ذهبيًا، ويقف منتصرًا فوق الشيطان.
           </p>
-  <ul className="list-disc pr-6 space-y-2  text-[13px] pb-1 ">
+  <ul className="list-disc pr-6 space-y-4  text-[13px] pb-1 ">
             <li><strong>قائد جيش السماء :  </strong> حارب الشيطان وطرحه إلى الأرض (رؤيا 12).</li>
               <q className=' ' style={{ textAlign: 'justify' ,marginBlock:"1rem" ,display:"block"}} >  
 وحدثت حرب في السماء: ميخائيل وملائكته حاربوا التنين، وحارب التنين وملائكته  ولم يقووا، فلم يوجد مكانهم بعد ذلك في السماء. 

@@ -67,7 +67,7 @@ const allActivities = services.flatMap((s) =>
 {zIndex:1000000}
   } className="fixed inset-0 min-h-screen flex items-center justify-center z-50 bg-black/40">
     {/* Card */}
-    <div className="relative bg-white border-2 border-[#7E1215] rounded-md shadow-2xl w-80 md:w-100 p-6 text-center flex flex-col items-center animate-fade-in">
+    <div className="relative bg-gray-100 border-0 border-[#7E1215] rounded-md shadow-6xl w-80 md:w-100 p-6 text-center flex flex-col items-center animate-fade-in">
       {/* Close button */}
       <button
         onClick={() => setSelectedActivity(null)}
@@ -92,12 +92,15 @@ const allActivities = services.flatMap((s) =>
 )}
 
       {/* الأزرار */}
+
+            <p className=" text-[15px] mb-8 mt-9 font-bold"> مواعيد الخدمات </p>
+
     <div className="flex flex-wrap justify-center gap-3">
   {allActivities.map((act, index) => (
     <button
       key={index}
       onClick={() => setSelectedActivity(act)}
-      className="bg-[#7E1215] hover:bg-[white] text-white hover:text-[#7E1215] hover:border-[#7E1215] font-medium px-4 py-2 rounded-full shadow-md transition font-bold"
+      className="bg-[#7E1215] hover:bg-[white] text-white hover:text-[#7E1215] hover:border-[#7E1215] cursor-pointer font-medium px-4 py-2 rounded-full shadow-2xl transition font-bold"
     >
       {act.event}
     </button>
@@ -105,16 +108,16 @@ const allActivities = services.flatMap((s) =>
 </div>
 
       {/* الجدول */}
-      <div className="w-full max-w-5xl bg-white shadow-lg md:rounded-lg overflow-hidden">
+      <div className="w-full max-w-7xl bg-white shadow-lg   overflow-hidden mt-10">
        
 
         <table className="w-full border-collapse text-right">
           <thead>
-            <tr className="bg-[#7E1215] text-white text-[14px]">
-              <th className="p-3 border border-blue-300 w-[10%]">اليوم</th>
-              <th className="p-3 border border-blue-300 w-[15%]">الوقت</th>
-              <th className="p-3 border border-blue-300">الفعالية</th>
-              <th className="p-3 border border-blue-300 w-[25%]">المكان</th>
+            <tr className="bg-[#7E1215] text-white text-[14px] text-center">
+              <th className="p-3 border border-gray-300 w-[10%]">اليوم</th>
+              <th className="p-3 border border-gray-300  w-[15%]">الوقت</th>
+              <th className="p-3 border border-gray-300 ">الخدمة</th>
+              <th className="p-3 border border-gray-300  w-[25%]">المكان</th>
             </tr>
           </thead>
           <tbody>
@@ -123,7 +126,7 @@ const allActivities = services.flatMap((s) =>
                 {service.activities.map((act, i) => (
                   <tr
                     key={i}
-                    className={`${index % 2 === 0 ? "bg-gray-50" : "bg-white"} hover:bg-blue-50 transition`}
+                    className={`${index % 2 === 0 ? "bg-gray-50" : "bg-white"} hover:bg-blue-50 transition  cursor-pointer`}
                   >
                     {i === 0 && (
                       <td
@@ -133,7 +136,7 @@ const allActivities = services.flatMap((s) =>
                         {service.day}
                       </td>
                     )}
-                    <td className="p-3 text-gray-800 border border-gray-300 text-center">{act.time}</td>
+                    <td className="p-3 text-gray-800 border border-gray-300 text-center ">{act.time}</td>
                     <td className="p-3 text-gray-800 border border-gray-300">{act.event}</td>
                     <td className="p-3 text-gray-800 border border-gray-300">{act.place}</td>
                   </tr>

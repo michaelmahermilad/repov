@@ -80,8 +80,9 @@ function index() {
       </div>
 
       <ChurchServicesTable/>
-<BankCard/>
-      <iframe allowFullScreen     src="https://heyzine.com/flip-book/93a14503a1.html#page/11" className='w-[100%] h-[100vh] flex justify-content m-auto' ></iframe>
+
+      <hr className='my-10 text-gray-300 w-[80%] opacity-0'/>
+       <iframe allowFullScreen     src="https://heyzine.com/flip-book/93a14503a1.html#page/11" className='w-[100%] h-[100vh] flex justify-content m-auto' ></iframe>
 
     </>)
 }
