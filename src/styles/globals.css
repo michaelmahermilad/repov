@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+  @font-face {
+  font-family: 'Aref Ruqaa';
+  src: url(../ArefRuqaa-Bold.ttf) format('truetype');
+ }
+ 
+/* --- ADDED: force a single base font-size across the site and remove scattered sizes --- */
+/* set the base font size for the app */
+ 
+
+/* reset any element-specific font-size (overrides Tailwind text-* and inline styles) */
+ 
+
+/* keep your utility classes to opt-in different sizes */
+.f-lg { font-size: var(--font-size-lg) !important; }
+.f-md { font-size: var(--font-size-md) !important; }
+.f-sm { font-size: var(--font-size-sm) !important; }
+.f-xl { font-size: var(--font-size-xl) !important; }
+.f-xs { font-size: var(--font-size-xs) !important; }
+ 
+
+.f-lg{
+  font-size: var(--font-size-lg); 
+}
+.f-md{
+  font-size: var(--font-size-md); 
+}
+.f-sm{
+  font-size: var(--font-size-sm); 
+}
+.f-xl{
+  font-size: var(--font-size-xl); 
+}
+.f-xs{  
+  font-size: var(--font-size-xs); 
+} 
+body{
+  background-image: url('/background.png');
+  background-size:cover;
+  background-position:left top;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* This keeps the background fixed */
+min-height: 100vh;
+}
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+ }
+.headerMain {
+  /* Default styles */
+  transition: background-color 0.3s ease, padding 0.3s ease; /* For smooth changes */
+}
+
+.headerMain.sticky {
+  position: sticky; /* Or sticky */
+  top: 0;
+  width: 100%;
+  background-color: #222; /* Darker background on scroll */
+  padding: unset 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional shadow */
+}
+
+.logo {
+  /* Default styles for the logo */
+  width: 99%; /* Example height */
+  transition: all 0.5s ease;
+}
+
+.headerMain.sticky .logo {
+  width: 100%;
+  margin: auto; /* Smaller logo on sticky header */
+}
+
+    .ticker-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: slideIn 10s linear infinite;
+      font-size: 18px;
+      color: #333;
+    }
+
+   
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+    animation: fadeInUp  1s ease-in-out ;
+ 
+}
+
+
